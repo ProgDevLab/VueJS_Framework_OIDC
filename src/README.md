@@ -27,9 +27,9 @@ project-description
 ## Access
 
 - **Development (Local)** :
-  - [project-name Development](http://localhost)
+  - [project-name Development](http://localhost:8080)
 - **Production (Local)** :
-  - [project-name Production](http://localhost)
+  - [project-name Production](http://localhost:8080)
 - **Production** :
   - [project-name Production](https://project-name_raw)
 

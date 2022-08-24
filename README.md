@@ -21,7 +21,12 @@
 
 VueJS 3 Framework with Vite and Vuetify with OpenID Connect Auth System.
 
-TODO
+This Package contains these technologies :
+
+- **VueJS 3 with Vite and TypeScript** : VueJS Framework
+- **Vuetify 3** : Vuetify CSS Framework based on Material Design
+- **Axios** : HTTP Request Engine
+- **OpenID Connect** : OIDC Auth System
 
 ### Requirements
 
