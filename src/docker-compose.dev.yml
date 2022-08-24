@@ -1,0 +1,28 @@
+---
+version: '3.6'
+
+services:
+  project-name-raw-dev:
+    container_name: '${PROJECT_NAME_UPPER_NAME}-dev'
+    image: ${PROJECT_NAME_UPPER_IMG}:${PROJECT_NAME_UPPER_VERSION_DEV}
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080"]
+      interval: 1m
+      timeout: 30s
+      retries: 5
+      start_period: 10s
+    environment:
+    - 'CHOKIDAR_USEPOLLING=true'
+    - 'CHOKIDAR_INTERVAL=2000'
+    - 'VITE_API_URL=${PROJECT_NAME_UPPER_API_URL_DEV}'
+    - 'VITE_APP_HOST=${PROJECT_NAME_UPPER_APP_HOST_DEV}'
+    - 'VITE_OIDC_DOMAIN=${PROJECT_NAME_UPPER_OIDC_DOMAIN_DEV}'
+    - 'VITE_OIDC_CLIENT_ID=${PROJECT_NAME_UPPER_OIDC_CLIENT_ID_DEV}'
+    volumes:
+    - ./src:/app:rw
+    ports:
+    - ${PROJECT_NAME_UPPER_PORT}:8080
+    restart: unless-stopped

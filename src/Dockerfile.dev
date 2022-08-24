@@ -1,0 +1,17 @@
+FROM node:16.13-bullseye-slim
+
+WORKDIR /app
+
+RUN mkdir /root/.cache
+
+RUN apt update && apt install curl -y
+
+COPY ./src ./
+
+EXPOSE 8080
+
+RUN chown -R node:node /root
+
+USER node
+
+CMD ["npm", "run", "dev"]

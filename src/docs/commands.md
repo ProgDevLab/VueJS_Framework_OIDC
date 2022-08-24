@@ -11,5 +11,8 @@
 ## Commands
 
 ```bash
-TODO
+docker run -it --rm -v /home/[user]/projects/src:/app -p 8080:8080 node:16.13-bullseye-slim bash
+
+npm init vue@latest
+
 ```

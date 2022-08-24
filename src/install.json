@@ -17,6 +17,9 @@
     "CHANGELOG.md",
     "CONTRIBUTING.md",
     "LICENCE.md",
-    "README.md"
+    "README.md",
+    ".env.sample",
+    "docker-compose.yml",
+    "docker-compose.dev.yml"
   ]
 }
