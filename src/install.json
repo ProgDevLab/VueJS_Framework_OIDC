@@ -1,0 +1,22 @@
+{
+  "searchAndReplaceList": {
+    "PROJECT_NAME_UPPER": "PROJECT_NAME",
+    "project-name-raw": "project-name",
+    "project-name": "Project Name",
+    "project-description": "Project Description.",
+    "project-author": "ProgOwer"
+  },
+  "gitList": {
+    "gitlab": "git@gitlab.com:project.git",
+    "github": "git@github.com:project.git"
+  },
+  "fileList": [
+    "docs/analysis.md",
+    "docs/commands.md",
+    "docs/ideas.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "LICENCE.md",
+    "README.md"
+  ]
+}
